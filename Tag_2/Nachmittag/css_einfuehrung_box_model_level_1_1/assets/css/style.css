@@ -1,0 +1,7 @@
+p {
+    background-color: aqua;
+    width: 300px;
+    border: solid 25px black;
+    padding: 25px;
+    margin: 25px auto;
+}

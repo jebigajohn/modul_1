@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts&Units</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <!-- TO DO FONTS -->
+    <!-- TO DO UNITS -->
+
+    <!-- Was ist überhaupt Units bzw Einheiten? -->
+    <!-- ! Einheiten können teilweise unsere Seite responsive machen -->
+    <!-- TO DO UNITS -->
+    
+    <header>
+        <!-- <h1> ist für unsere Überschrift zuständig, und sollte nur einmal im Header verwendet werden -->
+        <h1>Heute ist ein schöner Tag</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab enim voluptate ut debitis laudantium, quaerat nemo reprehenderit, perferendis exercitationem reiciendis est quae tenetur rerum facilis? Expedita magnam vitae, dolores totam temporibus quas neque eius dolor unde ipsa ducimus et. Est saepe soluta ullam sequi ab! Impedit nulla nisi perspiciatis nostrum.</p>
+    </header>
+
+    <main>
+        <article>
+            <h2>Units</h2>
+            <h3>Wann benutze ich html und wann :root im CSS?</h3>
+            <p>
+                Das Wurzelelement "html" selbst wird normalerweise nicht direkt für die Anwendung von Stilen verwendet,
+                sondern
+                stattdessen für das "body" Element oder andere spezifischere Selektoren. Das :root-Pseudoelement ist
+                jedoch
+                nützlich, um globale Variablen zu deklarieren und eine konsistente Verwendung von Farben, Schriftarten
+                und
+                anderen
+                Stileigenschaften sicherzustellen.
+            </p>
+        </article>
+        <br>
+        <section>
+            <!-- ! Absolute Einheiten -->
+            <h2>
+                Absolute Einheit (px)
+            </h2>
+
+            <p>
+                Eine feste Einheit, die auf Bildschirmen direkt in Pixeln
+                angezeigtwird. Sie bietet präzise Kontrolle über Größen und
+                Abstände.
+            </p>
+
+            <p>
+                Nachteile:
+            </p>
+
+            <div class="box"></div>
+
+            <p>
+                Nachteile:
+                Skalierbarkeit: Da Pixel eine feste Größe haben, können sie auf
+                Bildschirmen mit höherer Auflösung oder Pixeldichte klein erscheinen
+                oder auf Geräten mit niedrigerer Auflösung zu groß wirken
+            </p>
+            <br>
+            <p>
+                Barrierefreiheit: Absolute Einheiten wie Pixel können die
+                Barrierefreiheit beeinträchtigen, da sie die Textvergrößerung oder
+                andere Anpassungen für Menschen mit Sehbeeinträchtigungen einschränken
+                können.
+            </p>
+            
+        </section>
+        <br>
+        <!--  !Relative Einheiten -->
+            <h2>Relative Einheiten (%)</h2>
+            <div class="relative_container-percent">
+                <div class="container">
+                    <img src="./assets/img/68aefb365541fa0cff5eb5e8917d4dc3ad026706.png" alt="">
+                </div>
+            </div>
+
+            <br>
+
+            <h2>Viewport-Einheit (vh & vw)</h2>
+            <p>Diese Einheiten beziehen sich auf den sichtbaren Bereich des
+            Browserfensters. Sie sind ideal für das Erstellen von Layouts, die auf
+            die tatsächliche Größe des Bildschirms reagieren</p>
+            <div class="box1">
+                <p>20% der Höhe des Viewports </p>
+                <p>Volle Breite, da "p" ein Block Element ist</p>
+            </div>
+            <div class="box2">
+                <p>50% der breite & Höhe des Viewport </p>
+            </div>
+
+            <!--    -->
+           <div class="em__font-size">
+                <p>Relative Einheiten (em und rem):</p>
+                <!-- * basieren auf der Schriftgröße des Elternelements bzw.
+                * des Root-Elements. Em ist relativ zum Elternelement,    während Rem
+                * relativ zur Schriftgröße des Root-Elements ist. -->
+
+                <!-- * "em" bezieht sich auf die Schriftgröße des jeweiligen Elements. 
+                * Wenn wir also eine Schriftgröße 1em verwenden, wird diese auf die Schriftgröße des umgebenden Elements angewendet.  -->
+
+                <!-- * "rem" bezieht sich auf die Schriftgröße des Root-Elements, normalerweise des <html>-Tags.
+                * Wenn wir also eine Schriftgröße 1rem verwenden, wird diese auf die Schriftgröße des Root-Elements angewendet -- zahl x * 16 -->
+
+                <p class="normal">Normale Schriftgröße -> 16px</p>
+                <p class="larger">Vergrößerte Schriftgröße -> 1.5em = 24px</p>
+                <p class="even-larger">Noch größere Schriftgröße -> 2rem</p>
+            </div>
+            <!-- Die clamp()-Funktion ermöglicht es, einen Wert innerhalb eines bestimmten Bereichs zu begrenzen, 
+            was genau dem beschriebenen Verhalten entspricht, bei dem der Text schrumpft oder skaliert, 
+            aber innerhalb eines definierten Mindest- und Maximalwerts bleibt. -->
+            <div class="content">
+                <p class="title">Clamp Einheit:</p>
+                <p class="text"><span>Ich bin ein Text und schrupfe bzw skaliere bis zu einem min/max Wert.</span>
+                <br>
+                    Die CSS-Funktion clamp() begrenzt einen Mittelwert innerhalb eines Wertebereichs zwischen einer
+                    definierten
+                    Mindest- und einer maximalen Begrenzung.
+                    Die Funktion hat drei Parameter: einen Mindestwert, einen bevorzugten Wert und einen maximal zulässigen
+                    Wert.</p>
+                </div>
+    </main>
+
+</body>
+</html>

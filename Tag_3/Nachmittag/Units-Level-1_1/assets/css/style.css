@@ -1,0 +1,24 @@
+#a {
+    width: 400px;
+    height: 400px;
+}
+#b {
+    width: 10%;
+    height: 10%;
+}
+#c {
+    width: 20em;
+    height: 20em;
+}
+#d {
+    width: 40rem;
+    height: 40rem;
+}
+#e {
+    width: 35vw;
+    height: 35vw;
+}
+#f {
+    width: 75vh;
+    height: 75vh;
+}

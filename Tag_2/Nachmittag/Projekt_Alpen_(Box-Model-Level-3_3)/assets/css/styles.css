@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    padding-top: 10px;
+    padding-left: 101px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    color: #999999;
+}
+
+header{
+    height: 50.5px;
+    width: auto;
+}
+
+.alpen-section {
+    background-image: url("/Tag_2/Nachmittag/Projekt_Alpen_(Box-Model-Level-3_3)/assets/img/e8d5ac023015f19d657c9e7551017974e9863b37.png");
+    background-size: cover;
+    background-position: center;
+    height: 577px;
+    position: relative;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.trip-section {
+    height: 344px;
+    position: relative;
+    color: #999999;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.trip-text{
+    padding: 50px;
+}
+.hotel-text{
+    padding: 50px;
+}
+
+.triple-alps {
+    display: flex;
+    height: 208px;
+    justify-content: center;
+}
+
+.triple-alps img{
+    padding: 25px;
+    height: 202px;
+    width: 360px;
+}
+
+.Dates {
+    text-align: center;
+}

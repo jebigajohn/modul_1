@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+<!-- internes Styling -->
+
+
+
+</head>
+<body>
+    <h1>Herzlich Willkommen zur CSS Einfuehrung</h1>
+    <hr>
+    <h2>Drei Moeglichkeiten CSS in dein HTML einzubinden</h2>
+    <h3>1. Extern</h3>
+    <p>in dem "head" kommt der Link mit Pfad zu der CSS Datei</p>
+    <p><link rel="stylesheet" href="./assets/css/styles.css"></p>
+    <p>Warum sollten wir diese Methode bevorzugen?</p>
+    <ul>
+        <li>Schnellere Ladezeit: Es wird nur eine einzige CSS-Datei benötigt, um alle HTML-Dateien zu gestalten. Mit weniger Codezeilen kann eine Website schneller laden. Die Website wird auch die CSS-Datei für den nächsten Besuch Ihrer Besucher zwischenspeichern.
+        </li>
+        <li>
+            SEO Optimierung: Das Speichen von CSS-Stilen in einer anderen Datei macht die HTML-Datei übersichtlicher und organisierter.
+        </li>
+    </ul>
+
+    <h3>2. Interne</h3>
+    <p>In Den Head ( meistens darunter ) schreiben wir style> HIER KOMMT DEIN CDD REIN style/></p>
+    <ul>
+        <li>
+            Das benutzen wir auf garkeinen Fall
+        </li>
+    </ul>
+
+    <h3>3. Inline</h3>
+    <!-- INLINE STYLING HAT DIE HEOCHSTE PRIO, DESHALB AUFPASSEN!! -->
+    <p style="color: green; background-color: orange;">
+        Hier schreiben wir das CSS Attribut direkt in die Zeile wo wir es gerne haben wollen. Nach einem CSS Befehl kommt das ; zum trennen.
+    </p>
+    <hr>
+    <h2>Pseudo Klassen</h2>
+    <article>
+        <ul>
+            <li>Einkaufen</li>
+            <li>Sport machen</li>
+            <li>Kochen</li>
+            <li>Fahrrad reparieren</li>
+        </ul>
+        <section>
+            <p>Ich bin p tag #1</p>
+            <p>Ich bin p tag #2</p>
+            <p>Ich bin p tag #3</p>
+            <p>Ich bin p tag #4</p>
+        </section>
+    </article>
+    <h3>Display Block / Inline/ Inline Block</h3>
+    <span>Ich bin ein Inline Element</span>
+    <a href="./boxmodel.html">Zum Boxmodel</a>
+</body>
+</html>

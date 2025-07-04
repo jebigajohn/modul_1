@@ -1,0 +1,84 @@
+<!-- Kommentare mit -->
+<!-- Ausrufezeichen und TAB legt das HTML Grundgerüst an-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML INTRO</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- <a> ist das Kind von dem <nav> Element -->
+            <!-- Externer Link zu Google -->
+            
+             <a href="https://www.google.com/">Link zu Google</a>
+             <!-- Interner Link zur About Seite innerhalb unserer Seite -->
+            <a href="./assets/pages/about.html">About us</a>
+            <a href="/tag1_html_intro/assets/pages/about.html">About us 2</a>
+        </nav>
+
+    </header>
+    <main>
+        <section>
+            <!-- h1, p sind Beispiele für Blockelemente => Sie nehmen die ganze Breite ein -->
+             <h1>Überschrift 1</h1>
+             <p>Lorem <b>ipsum</b> dolor sit, amet consectetur adipisicing elit. Atque, perspiciatis laborum. Nam, maiores. Similique ipsum saepe voluptate esse modi voluptatem laborum earum dolorum natus exercitationem quas dolores, dolorem, harum eveniet!</p>
+        </section>
+        <section>
+            <p>Lorem ipsum dolor sit, <i>der Text ist Italic</i> amet consectetur <span>Dieser Text ist innerhalb eines Span Elements</span> adipisicing elit. Omnis distinctio nostrum eaque rerum deleniti sapiente necessitatibus eius laboriosam quia assumenda porro, maiores consequatur quisquam commodi. Nulla laudantium, nemo quasi obcaecati aut dolores, enim tempora dolorum, illo hic et magni deleniti? Nobis dolorum voluptates architecto ipsam inventore magnam, ipsum veniam a voluptatum, tempora labore, cupiditate molestiae quibusdam qui iste hic. Nostrum omnis aliquid soluta illo recusandae. Molestiae quibusdam necessitatibus delectus tenetur maiores itaque atque sit. Enim, voluptatibus iure in, cum fugiat reprehenderit vitae error vel fugit amet commodi dicta eos, maiores nostrum! Illum aliquid voluptatum tempora laboriosam. Similique minima non et.</p>
+        </section>
+        <!-- ungeordnete Liste => <ul> -->
+            <ul>
+                <!-- li ist das Kindelement von dem ul Element -->
+                 <!-- das Shortcut li + "*" die Anzahl => li*4 -->
+                  <!-- Wie kann man gleichzeitig mehrere identische Elemente selektieren? Erstmal auf ein Wort bzw Begriff klicken und dann die Kombination cmd + d-->
+                 <li>Element 1</li>
+                 <li>Element 2</li>
+                 <li>Element 3</li>
+                 <li>Element 4</li>
+            </ul>
+            <!-- ul>li*8 -->
+             <!-- Um mehrere Zeilen mit Text zu befüllen option+klick ODER Option+ Shift -->
+            <ul>
+                <li>Unterelement 1</li>
+                <li>Unterelement 2</li>
+                <li>Unterelement 3</li>
+                <li>Unterelement 4</li>
+                <li>Unterelement 5</li>
+                <li>Unterelement 6</li>
+                <li>Unterelement 7</li>
+                <li>Unterelement 8</li>
+            </ul>
+
+            <!-- geordnete Liste -->
+             <ol>
+                <li>Unterelement</li>
+                <li>Unterelement</li>
+                <li>Unterelement</li>
+                <li>Unterelement</li>
+             </ol>
+             <!-- Bild bzw img -->
+              <article>
+                <h3>Das ist ein Bild von Dewie</h3>
+                <img src="./assets/img/DeweyWilkerson.webp" alt="Dewie">
+              </article>
+              <article>
+                <h3>Ein zufälliges Bild</h3>
+                <img src="https://picsum.photos/200/300" alt="random Bild">
+              </article>
+
+    </main>
+    <footer>
+        <p>SuperCode GMBH</p>
+        <!-- Attribut Target ermöglicht dass ein neuer TAB geöffnet wird, sobald man auf den Link klickt -->
+        <a href="https://www.super-code.de/vollzeit-weiterbildungen" target="_blank">SuperCode Seite</a>
+        <!-- die Voraussetzung ist dass man tel oder mailto + ":" schreibt -->
+        <a href="tel:+49123456778">Ruf mich bitte an</a>
+        <a href="mailto:joedoe"></a>
+        </footer>
+    
+</body>
+</html>
