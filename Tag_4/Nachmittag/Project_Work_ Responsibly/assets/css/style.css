@@ -1,0 +1,108 @@
+/* Global Styling */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+    background-color: #EEEEEE;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf")
+}
+
+header{
+    width: 1440px;
+    height: 662px;
+}
+
+.nav-headings{
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+    padding-left: 100px;
+    width: 1240px;
+}
+
+.nav-headings h1{
+    font-size: 14px;
+    font-weight: 400;
+    color: #659D89;
+    cursor: default;
+}
+
+.nav-headings h1:hover {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* x, y, blur, Farbe */
+}
+
+
+.box1{
+    width: 620px;
+    height: 234px;
+    padding-top: 80px;
+    padding-left: 100px;
+    display: block;
+}
+
+.box1 h2{
+    font-size: 34px;
+    font-weight: 400;
+    color: #659D89;
+}
+
+.box1 p{
+    font-size: 34px;
+    font-weight: 300;
+}
+
+.box2 {
+    padding-top: 120px;
+    padding-left: 100px;
+    width: 1240px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.box3 {
+    padding-top: 150px;
+    padding-left: 100px;
+    width: 1240px;
+}
+
+.box4 {
+    padding-top: 40px;
+    margin-top: 10px;
+    padding-left: 100px;
+    width: 1240px;
+}
+
+.socialmedia{
+    list-style: none;
+    opacity: 0.4;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* x, y, blur, Farbe */
+}
+
+.socialmedia svg:hover {
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.851));
+    cursor: default;
+}
+
+.browse {
+    list-style: none;
+    padding-left: 0;
+    opacity: 0.4;
+}
+
+.browse li::marker {
+    content: "↓ ";
+    font-size: 16px;
+    color: #000;
+}
+
+
+.browse li:hover{
+
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.447); /* x, y, blur, Farbe */
+}
+
