@@ -67,14 +67,28 @@ header{
 .box3 {
     padding-top: 150px;
     padding-left: 100px;
+    padding-bottom: 50px;
     width: 1240px;
 }
 
-.box4 {
-    padding-top: 40px;
-    margin-top: 10px;
+main{
+    width: 1440px;
+    height: 3552;
+}
+
+.div1{
+    padding-top: 50px;
+    width: 1440px;
+    height: 737.5px;
+}
+
+.div1 h3{
     padding-left: 100px;
-    width: 1240px;
+    font-size: 20px;
+}
+.div1 h4{
+    padding-left: 100px;
+    font-size: 16px;
 }
 
 .socialmedia{
@@ -84,7 +98,7 @@ header{
 }
 
 .socialmedia svg:hover {
-    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.851));
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.806));
     cursor: default;
 }
 
@@ -102,7 +116,221 @@ header{
 
 
 .browse li:hover{
-
+    cursor: default;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.447); /* x, y, blur, Farbe */
 }
 
+.box4{
+    height: 679px;
+    width: 1240px;
+    padding-top: 57.5px;
+    padding-left: 100px;
+}
+
+.div1{
+    width: 1440px;
+    height: 737.5px;
+}
+
+.div2{
+    width: 1080px;
+    height: 284.5px;
+    padding-left: 80px;
+    padding-top: 80px;
+    gap: 40px;
+    display: flex;
+}
+
+.div2 img:hover{
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.806));
+}
+
+.div3{
+    width: 1080px;
+    height: 284.5px;
+    padding-left: 80px;
+    padding-top: 80px;
+    gap: 40px;
+    display: flex;
+}
+
+.div3 img:hover{
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.806));
+}
+
+.title{
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+.title h5{
+    font-weight: 300;
+}
+
+.div4{
+    padding-left: 100px;
+    width: 1440px;
+    height: 2733.39px;
+}
+
+.mainsection{
+    padding-top: 38.5px;
+    width: 1240px;
+    height: 2694.89px;
+    padding-left: 100px;
+}
+
+.article1{
+    width: 1080px;
+    height: 534.25px;
+    display: block;
+    padding: 0;
+}
+
+.resource1 img{    
+    width: 756px;
+    height: 425.25px;
+}
+
+.subtitle1{
+    padding-top: 10px;
+    text-align: center;
+    height: 91.5px;
+    width: 756px;
+}
+
+.subtitle1 p{
+    font-size: 12px;
+    vertical-align: middle;
+    color: #a2a2a2;
+}
+
+.subtitle1 h6{
+    font-size: 20px;
+}
+.article4{
+    width: 1080px;
+    height: 534.25px;
+    display: block;
+    justify-items: right;
+    padding: 0;
+}
+
+.resource4 img{    
+    width: 756px;
+    height: 425.25px;
+}
+
+.subtitle4{
+    padding-top: 10px;
+    text-align: center;
+    height: 91.5px;
+    width: 756px;
+}
+
+.subtitle4 p{
+    font-size: 12px;
+    vertical-align: middle;
+    color: #a2a2a2;
+}
+
+.subtitle4 h6{
+    font-size: 20px;
+}
+.article2{
+    width: 1080px;
+    height: 534.25px;
+    display: block;
+    justify-items: right;
+    padding: 0;
+}
+
+.resource2 img{    
+    width: 756px;
+    height: 425.25px;
+}
+
+.subtitle2{
+    padding-top: 10px;
+    text-align: center;
+    height: 91.5px;
+    width: 756px;
+}
+
+.subtitle2 p{
+    font-size: 12px;
+    vertical-align: middle;
+    color: #a2a2a2;
+}
+
+.subtitle2 h6{
+    font-size: 20px;
+}
+.article3{
+    width: 1080px;
+    height: 534.25px;
+    display: block;
+    padding: 0;
+}
+
+.resource3 img{    
+    width: 756px;
+    height: 425.25px;
+}
+
+.subtitle3{
+    padding-top: 10px;
+    text-align: center;
+    height: 91.5px;
+    width: 756px;
+}
+
+.subtitle3 p{
+    font-size: 12px;
+    vertical-align: middle;
+    color: #a2a2a2;
+}
+
+.subtitle3 h6{
+    font-size: 20px;
+}
+
+.footer{
+    height: 202px;
+    width: 1440px;
+    text-align: center;
+    align-content: center;
+}
+
+.resource1 img:hover{
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.806));
+}
+.resource2 img:hover{
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.806));
+}
+.resource3 img:hover{
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.806));
+}
+.resource4 img:hover{
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.806));
+}
+
+
+.footer a{
+    font-size: 20px;
+    color: #666666;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.424); /* x, y, blur, Farbe */
+}
+
+.footer a::before {
+    content: "🔝 ";
+}
+
+.footer p{
+    font-size: 10px;
+    color: #666666;
+}
