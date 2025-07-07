@@ -1,0 +1,93 @@
+body{
+  font-weight: bold;
+}
+
+body h3::first-letter {
+  font-size: 80px;
+  color: #2e8b57;
+}
+
+body h3:hover::first-letter{
+  color: #00ced1;
+}
+
+li::first-letter{
+  font-size: 40px;
+}
+
+
+li:nth-of-type(1)::first-letter{
+  text-decoration: overline;
+  color: #00ced1;
+}
+li:nth-of-type(2)::first-letter{
+  text-decoration: underline;
+  color: #a020f0;
+}
+li:nth-of-type(3)::first-letter{
+  text-decoration: line-through;
+  color:#32cd32;
+}
+
+li:nth-of-type(3){
+  text-decoration: line-through;
+}
+
+
+section p:nth-of-type(1){
+  text-indent: 50px;
+  color: #483d8b;
+}
+section p:nth-of-type(1)::first-line{
+  text-indent: 50px;
+}
+section p:nth-of-type(1)::first-letter{
+  text-indent: 50px;
+  color: #483d8b;
+  font-size: 20px;
+}
+
+p:nth-of-type(odd)::first-line{
+  font-size: 20px;
+}
+p:nth-of-type(even)::first-line{
+  font-size: 25px;
+}
+p:nth-of-type(odd)::first-letter{
+  font-size: 25px;
+  color: red;
+}
+p:nth-of-type(even)::first-letter{
+  font-size: 45px;
+  color: red;
+}
+
+section p:not(:first-of-type):hover::first-line {
+  color: #00bfff;
+}
+
+section p:not(:first-of-type)::first-line {
+  color: #2e8b57;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- #a020f0
+- #00bfff
+- #32cd32
+- #c71585
+- #00ced1
+- #483d8b
+- #2e8b57

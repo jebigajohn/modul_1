@@ -1,0 +1,12 @@
+section p {
+  background-color: linen;
+}
+
+section h1 {
+  background-color: lightblue;
+}
+
+article {
+  background-image: url(../img/chuttersnap-M2-_GRvWWg0-unsplash.jpg);
+  background-size: contain;
+}

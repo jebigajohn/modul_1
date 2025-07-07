@@ -4,12 +4,17 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: "Cinzel";
+    src: url(../fonts/Cinzel/Cinzel-VariableFont_wght.ttf);
+}
+
 h1{
     padding-top: 10px;
     padding-left: 101px;
-    font-family: 'Times New Roman', Times, serif;
     font-size: 24px;
     color: #999999;
+    font-family: "Cinzel";
 }
 
 header{
@@ -18,7 +23,7 @@ header{
 }
 
 .alpen-section {
-    background-image: url("/Tag_2/Nachmittag/Projekt_Alpen_(Box-Model-Level-3_3)/assets/img/e8d5ac023015f19d657c9e7551017974e9863b37.png");
+    background-image: url(../img/e8d5ac023015f19d657c9e7551017974e9863b37.png);
     background-size: cover;
     background-position: center;
     height: 577px;
@@ -28,6 +33,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "Cinzel";
 }
 .trip-section {
     height: 344px;
@@ -40,6 +46,7 @@ header{
 
 .trip-text{
     padding: 50px;
+    font-family: "Cinzel";
 }
 .hotel-text{
     padding: 50px;
@@ -57,6 +64,71 @@ header{
     width: 360px;
 }
 
-.Dates {
+
+.box1{
+    height: 365px;
+    width: 1440px;
+}
+
+.tour{
     text-align: center;
+    padding: 30px;
+    font-family: "Cinzel";
+}
+
+.dates{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline-block;
+    padding-left: 220px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+ul{
+    display: grid;
+    gap: 10px;
+}
+
+.dates li{
+    list-style: none;
+}
+
+.so{
+    color: red;
+}
+
+.av{
+    color: green;
+}
+
+
+footer{
+    height: 172px;
+    width: 1440px;
+    text-align: center;
+}
+
+.contact{
+    font-family: "Cinzel";
+    font-size: 24px;
+}
+
+.ref{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px;
+    font-weight: 800;
+}
+
+.darkblue{
+    color: blue;
+}
+
+.mint{
+    color: mediumturquoise;
+}
+
+.purple{
+    color: purple;
 }

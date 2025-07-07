@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "Bitcount";
+    src: url(../fonts/Bitcount_Grid_Double/BitcountGridDouble-VariableFont_CRSV\,ELSH\,ELXP\,slnt\,wght.ttf);
+}
+
+@font-face {
+    font-family: "Manufacturin";
+    src: url(../fonts/Manufacturing_Consent/ManufacturingConsent-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Savate";
+    src: url(../fonts/Savate/Savate-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Tektur";
+    src: url(../fonts/Tektur/Tektur-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: "Twinkle";
+    src: url(../fonts/Twinkle_Star/TwinkleStar-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto/Roboto-Italic-VariableFont_wdth\,wght.ttf);
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+h1{
+    font-family: "Bitcount";
+    background-color: blueviolet;
+    text-align: center;
+    width: 600px;
+    margin: 0 auto;
+    color: greenyellow;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.eins{
+    font-family: "Manufacturin";
+    text-align: center;
+    margin: 0 auto;
+    width: 600px;
+    color: blueviolet;
+}
+.zwei{
+    font-family: "Savate";
+    text-align: center;
+    margin: 0 auto;
+    width: 600px;
+    color: blueviolet;
+}
+.drei{
+    font-family: "Tektur";
+    text-align: center;
+    background-color: aqua;
+    margin: 0 auto;
+    width: 600px;
+    border-radius: 10px;
+        padding: 10px;
+        color: white;
+}
+.vier{
+    font-family: "Twinkle";
+    text-align: center;
+    margin: 0 auto;
+    width: 600px;
+    color: blueviolet;
+}
+.fünf{
+    font-family: "Roboto";
+    text-align: center;
+    background-color: blueviolet;
+    width: 600px;
+    margin: 0 auto;
+    font-size: small;
+    color: greenyellow;
+        border-radius: 10px;
+        padding: 10px;
+}
+
