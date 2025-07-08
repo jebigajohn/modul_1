@@ -1,0 +1,513 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Work";
+  src: url(../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Didact";
+  src: url(../fonts/Didact_Gothic/DidactGothic-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Fjalla";
+  src: url(../fonts/Fjalla_One/FjallaOne-Regular.ttf);
+}
+
+.desktop {
+  max-width: 100%;
+  height: 7600px;
+}
+
+.page1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertikale Zentrierung */
+  align-items: center; /* Horizontale Zentrierung */
+  text-align: center; /* Text in den Elementen zentriert */
+  gap: 1rem; /* Abstand zwischen h1 und h2 */
+}
+
+.page1 h1 {
+  font-size: 20px;
+  font-family: "Work";
+  font-weight: 400;
+}
+
+.page1 h2 {
+  font-size: 100px;
+  font-weight: 400;
+  font-family: "Didact";
+  line-height: 130%;
+  letter-spacing: -2%;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+
+.Portfolio1 {
+  background-image: url(../img/portfolio1.jpeg);
+  background-size: 70% 50%;
+}
+
+.page1 h3 {
+  padding-top: 100px;
+  font-size: 160px;
+  font-weight: 400;
+  font-family: "Work";
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  padding-bottom: 150px;
+}
+
+.backgroundImg {
+  position: relative; /* Referenz für absolute Positionierung */
+  background-image: url(../img/portfolio2.jpg);
+  background-size: cover;
+  height: 826px;
+  padding-top: 20px;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.backgroundImg ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.backgroundImg li {
+  font-size: 14px;
+  font-family: "Work";
+  color: #9e9e9e;
+  position: absolute;
+  top: 230px;
+  left: 220px;
+}
+
+.backgroundImg li::before {
+  content: "⎯";
+  margin-right: 5px;
+}
+
+.backgroundImg h1 {
+  font-size: 112px;
+  font-family: "Didact";
+  color: #ffffff;
+  position: absolute;
+  top: 260px;
+  left: 220px;
+  text-transform: uppercase;
+}
+
+.backgroundImg p:nth-of-type(1) {
+  font-size: 20px;
+  font-family: "Work";
+  color: #9e9e9e;
+  position: absolute;
+  top: 440px;
+  left: 220px;
+}
+
+.backgroundImg p:nth-of-type(2) {
+  font-size: 165px;
+  font-family: "Fjalla";
+  color: #9e9e9e;
+  position: absolute;
+  top: 580px;
+  left: 1172px;
+  opacity: 0.5;
+}
+
+.backgroundImg button {
+  font-size: 16px;
+  font-family: "Fjalla";
+  position: absolute;
+  top: 550px;
+  left: 220px;
+  font-weight: 400;
+  border: 2px solid #9e9e9e;
+  color: #ffffff;
+  padding: 10px 20px;
+  background-color: transparent;
+}
+.backgroundImg button:hover {
+  font-size: 16px;
+  font-family: "Fjalla";
+  position: absolute;
+  top: 550px;
+  left: 220px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+}
+
+.backgroundImg button:hover + p:nth-of-type(2) {
+  opacity: 1;
+  color: white;
+}
+
+.backgroundImg2 {
+  position: relative; /* Referenz für absolute Positionierung */
+  background-image: url(../img/portfolio3.png);
+  background-size: 100% 100%;
+  height: 1056px;
+  padding-top: 20px;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.backgroundImg2 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.backgroundImg2 li {
+  font-size: 14px;
+  font-family: "Work";
+  color: #9e9e9e;
+  position: absolute;
+  top: 230px;
+  left: 310px;
+}
+
+.backgroundImg2 li::before {
+  content: "⎯";
+  margin-right: 5px;
+}
+
+.backgroundImg2 h1 {
+  font-size: 112px;
+  font-family: "Didact";
+  color: #000000;
+  position: absolute;
+  top: 260px;
+  left: 310px;
+  text-transform: uppercase;
+}
+
+.backgroundImg2 p:nth-of-type(1) {
+  font-size: 20px;
+  font-family: "Work";
+  color: #9e9e9e;
+  position: absolute;
+  top: 440px;
+  left: 310px;
+}
+
+.backgroundImg2 p:nth-of-type(2) {
+  font-size: 165px;
+  font-family: "Fjalla";
+  color: #000000;
+  position: absolute;
+  top: 580px;
+  left: 1172px;
+  opacity: 0.5;
+}
+
+.backgroundImg2 button {
+  font-size: 16px;
+  font-family: "Fjalla";
+  position: absolute;
+  top: 550px;
+  left: 310px;
+  font-weight: 400;
+  border: 2px solid #000000;
+  color: #000000;
+  padding: 10px 20px;
+  background-color: transparent;
+}
+.backgroundImg2 button:hover {
+  font-size: 16px;
+  font-family: "Fjalla";
+  position: absolute;
+  top: 550px;
+  left: 310px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+  padding: 10px 20px;
+}
+
+.backgroundImg2 button:hover + p:nth-of-type(2) {
+  opacity: 1;
+  color: black;
+}
+
+.backgroundImg3 {
+  position: relative; /* Referenz für absolute Positionierung */
+  background-image: url(../img/portfolio4.jpg);
+  background-size: cover;
+  height: 826px;
+  padding-top: 20px;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.backgroundImg3 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.backgroundImg3 li {
+  font-size: 14px;
+  font-family: "Work";
+  color: #9e9e9e;
+  position: absolute;
+  top: 230px;
+  left: 220px;
+}
+
+.backgroundImg3 li::before {
+  content: "⎯";
+  margin-right: 5px;
+}
+
+.backgroundImg3 h1 {
+  font-size: 112px;
+  font-family: "Didact";
+  color: #ffffff;
+  position: absolute;
+  top: 260px;
+  left: 220px;
+  text-transform: uppercase;
+}
+
+.backgroundImg3 p:nth-of-type(1) {
+  font-size: 20px;
+  font-family: "Work";
+  color: #9e9e9e;
+  position: absolute;
+  top: 440px;
+  left: 220px;
+}
+
+.backgroundImg3 p:nth-of-type(2) {
+  font-size: 165px;
+  font-family: "Fjalla";
+  color: #9e9e9e;
+  position: absolute;
+  top: 580px;
+  left: 1172px;
+  opacity: 0.5;
+}
+
+.backgroundImg3 button {
+  font-size: 16px;
+  font-family: "Fjalla";
+  position: absolute;
+  top: 550px;
+  left: 220px;
+  font-weight: 400;
+  border: 2px solid #9e9e9e;
+  color: #ffffff;
+  padding: 10px 20px;
+  background-color: transparent;
+}
+.backgroundImg3 button:hover {
+  font-size: 16px;
+  font-family: "Fjalla";
+  position: absolute;
+  top: 550px;
+  left: 220px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+}
+.backgroundImg3 button:hover + p:nth-of-type(2) {
+  opacity: 1;
+  color: white;
+}
+
+.backgroundImg4 {
+  position: relative; /* Referenz für absolute Positionierung */
+  background-image: url(../img/portfolio5.png);
+  background-size: 100% 100%;
+  height: 1056px;
+  padding-top: 20px;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.backgroundImg4 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.backgroundImg4 li {
+  font-size: 14px;
+  font-family: "Work";
+  color: #9e9e9e;
+  position: absolute;
+  top: 230px;
+  left: 310px;
+}
+
+.backgroundImg4 li::before {
+  content: "⎯";
+  margin-right: 5px;
+}
+
+.backgroundImg4 h1 {
+  font-size: 112px;
+  font-family: "Didact";
+  color: #000000;
+  position: absolute;
+  top: 260px;
+  left: 310px;
+}
+
+.backgroundImg4 p:nth-of-type(1) {
+  font-size: 20px;
+  font-family: "Work";
+  color: #9e9e9e;
+  position: absolute;
+  top: 440px;
+  left: 310px;
+}
+
+.backgroundImg4 p:nth-of-type(2) {
+  font-size: 165px;
+  font-family: "Fjalla";
+  color: #9e9e9e;
+  position: absolute;
+  top: 580px;
+  left: 1172px;
+  opacity: 0.5;
+}
+
+.backgroundImg4 button {
+  font-size: 16px;
+  font-family: "Fjalla";
+  position: absolute;
+  top: 550px;
+  left: 310px;
+  font-weight: 400;
+  border: 2px solid #000000;
+  color: #000000;
+  padding: 10px 20px;
+  background-color: transparent;
+}
+.backgroundImg4 button:hover {
+  font-size: 16px;
+  font-family: "Fjalla";
+  position: absolute;
+  top: 550px;
+  left: 310px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+  padding: 10px 20px;
+}
+.backgroundImg4 button:hover + p:nth-of-type(2) {
+  opacity: 1;
+  color: black;
+}
+
+.Description {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Abstand zwischen h1 und h2 */
+  background-color: black;
+  height: 931px;
+  padding-top: 20px;
+  color: white;
+  gap: 100px;
+}
+
+.Description h1 {
+  padding-top: 100px;
+  text-align: center;
+  align-items: center;
+  font-size: 180px;
+  font-family: "Work";
+  font-weight: 400;
+  letter-spacing: -10%;
+}
+
+.Descriptiontext {
+  position: absolute;
+  height: 200px;
+  width: 700px;
+  font-family: "Work";
+  color: #666666;
+  font-size: 22px;
+  font-weight: 400;
+  left: 640px;
+  top: 500px;
+}
+.Descriptiontext2 {
+  position: absolute;
+  height: 200px;
+  width: 700px;
+
+  left: 640px;
+  top: 700px;
+}
+
+.Descriptiontext2 a {
+  font-family: "Work";
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.Descriptiontext2 a:hover {
+  text-decoration: underline;
+}
+
+.Socials {
+  height: 1160px;
+  width: 702px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  gap: 200px;
+  padding-top: 400px;
+}
+
+.Socials p {
+  font-size: 160px;
+  font-family: "Didact";
+}
+
+.Socials p:hover {
+  text-decoration: underline;
+}
+
+.heart {
+  width: 40px;
+  height: 40px;
+  animation: pulse 1s infinite ease-in-out;
+  padding-bottom: 20px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
