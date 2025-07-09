@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+
+  <!-- ! Form => Wir benötigen das <form> tag, wenn ein HTML Formular erstellt wird -->
+  <!-- ? Attribute => Das Action attribute verweist auf eine URL bzw an das BackEnd oder besser gesagt an die Datenbank -->
+
+  <!-- ! diese Dateien verarbeitet werden gespeichert und bei Bedarf sendet eine Antwort -->
+  <!-- Dieser Prozess ist nicht wie eine Einbahn Straße, weil eine Form bei Bedarf noch eine Antwort vom Backend bekommen kann -->
+
+  <body>
+    <form action="">
+      <!-- fieldset wird verwendet um eine logische Gruppierung von Elementen zu erstellen -->
+      <fieldset>
+        <legend>Label und Input</legend>
+        <!-- ---------INPUT------------ -->
+        <!-- Es gibt verschiedene INPUT types => text, color, number, tel, mail, radio, password, checkbox, select -->
+
+        <!-- ! Ein Input Element wird immer mit einem anderen Element zusammen geschrieben -->
+
+        <!-- % Das id-attribute wird verwendet, um ein HTML-Element eindeutig zu indentifizieren -->
+        <!-- % Es ist sehr nützlich, um eine Verbindung zwischen einem Label und einem input Element herzustellen -->
+
+        <!-- + INPUT TEXT -->
+        <section class="text_section">
+          <label for="text">Gib hier einen Text ein</label>
+          <input type="text" name="" id="text" placeholder="dein Text" />
+        </section>
+
+        <!-- INPUT NUMBER -->
+
+        <section class="number_section">
+          <label for="number">Gib hier eine Zahl ein</label>
+          <input type="number" name="" id="number" required />
+        </section>
+
+        <!-- Attribute wie placeholder, disabled, required -->
+
+        <!-- Das Attribute disabled ist ein booleshes Attribute -->
+        <!-- Wenn es vorhanden ist, gibt es an, dass das Element deaktiviert werden soll, ein deaktiviertes Element ist unbrauchbar -->
+
+        <!-- Wenn eine oder mehrere Bedingungen erfüllt sind, dann könnte über JS der deaktivierte Wert entfernt werden und das Element wieder nutzbar machen -->
+
+        <!-- INPUT TELEFON -->
+        <section class="telefon_section">
+          <label for="telefon">Handynummer</label>
+          <input type="tel" name="" id="telefon" />
+        </section>
+
+        <!-- Das Attribute required bezwingt den User, ein Eingabefeld auszufüllen wenn er eine nachführende action ausführen möchte -->
+
+        <!-- INPUT MAIL -->
+        <section class="email_section">
+          <label for="email">E-Mail:</label>
+          <input type="email" name="" id="email" required />
+        </section>
+
+        <!-- ! Die Attribute for und id können frei erfundene Wörter sein, sollten aber sinnhaft sein -->
+        <!-- INPUT PASSWORT -->
+        <section class="password_section">
+          <label for="password">Passwort:</label>
+          <input type="password" name="" id="password" placeholder="Geben sie hier Ihr Kennwort ein." />
+        </section>
+
+        <hr />
+        <!-- INPUT MULTIPLE RADIO -->
+        <section class="radio_section">
+          <h1>Habe ich genug Geld für Urlaub?</h1>
+          <div>
+            <input type="radio" name="auswahl" id="ja" />
+            <label for="ja">Ja</label>
+          </div>
+          <div>
+            <input type="radio" name="auswahl" id="nein" />
+            <label for="nein">Nein</label>
+          </div>
+          <div>
+            <input type="radio" name="auswahl" id="vielleicht" />
+            <label for="vielleicht">Vielleicht</label>
+          </div>
+
+          <!-- Die Verwedungen desselben name-attributes bei radio-buttons einer Mehrfachauswahl %sorgt dafür, dass sie alle als zusammengehörige Gruppe anerkannt werden 
+          % nur eine Option kann ausgewählt werden  
+          -->
+        </section>
+
+        <hr />
+
+        <!-- INPUT CheckBox & Select -->
+        <section>
+          <h2>Ich packe meinen Koffer..</h2>
+          <div>
+            <input type="checkbox" name="" id="hose" value="hose" />
+            <label for="hose">Hose</label>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="shirt" value="shirt" />
+            <label for="shirt">T-Shirt</label>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="schuhe" value="schuhe" />
+            <label for="schuhe">Schuhe</label>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="snacks" value="snacks" />
+            <label for="snacks">Snacks</label>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="wasser" value="wasser" />
+            <label for="wasser">Wasser</label>
+          </div>
+        </section>
+
+        <hr />
+        <!-- INPUT Select -->
+
+        <!-- Das HTML-Element select wird verwendert, um ein Drop-Down Menü in einem Formular zu erstellen -->
+        <!-- Select hat ein einzelnes Kind als Element, dieses ist "option" -->
+
+        <section class="select_selection">
+          <h4>Schöne Urlaubsorte</h4>
+          <div>
+            <!-- ? Mit multiple macht man alle Möglichkeiten eines DropDown sichtbar
+                 ? mit CMD + Klick kann man dann mehrere Werte auswählen -->
+            <!-- ? Multiple attribute ist nur für Elemente wie select, email und file verfügbar -->
+            <!-- ? "size" wird verwendet um das fenster zu croppen und quasi ab der erreichten Zahl der auswahlmöglichkeiten muss gescrollt werden  -->
+
+            <label for="countries">Meine Reiseziele...</label>
+            <select name="countries" id="countries" multiple>
+              <option value="kr">Kroatien</option>
+              <option value="lk">Sri Lanka</option>
+              <option value="mg">Madagaskar</option>
+              <option value="tb">Timbuktu</option>
+            </select>
+          </div>
+        </section>
+
+        <hr />
+        <!-- + INPUT DATE -->
+        <section class="date_section">
+          <h4>Wann fliege ich los?</h4>
+          <div>
+            <label for="date">Datum:</label>
+            <input type="date" id="date" />
+          </div>
+        </section>
+
+        <hr />
+        <!-- + TEXTAREA -->
+
+        <!-- Textarea hat zwei Attribute und zwar collums und rows -->
+        <section class="range_section">
+          <div>
+            <label for="textarea">Erzähl mir deine Geschichte...</label>
+            <textarea name="" id="textarea" placeholder="Meine Geschichte..." cols="30" rows="10"></textarea>
+          </div>
+        </section>
+
+        <hr />
+        <!-- + File -->
+
+        <section class="file_section">
+          <div>
+            <label for="file">Teile deine Bilder mit uns...</label>
+            <input type="file" name="" id="file" />
+          </div>
+        </section>
+
+        <!-- INPUT Submit -->
+
+        <!-- Input submit wird häufig in HTML-Formularen verwendet und ist es ist wie ein Busfahrer, es wird alles gesammelt und dann nach Bedarf an den Server geschickt -->
+
+        <div>
+          <input type="submit" value="submit" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
