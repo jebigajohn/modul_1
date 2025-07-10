@@ -1,0 +1,87 @@
+html {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 5vh 10vw;
+}
+
+/* ! rgba => ACHTUNG, der Alpha Wert sollte nur mit "." geschrieben werden, sobald man nicht mit ganzen Zahlen arbeitet */
+
+/* ! HEXA-Dezimal => Die letzten zwei Zahlen können auch als Alpha bzw Opacity verwendet werden */
+
+fieldset {
+  border: 2px solid black;
+  background-color: rgba(62, 153, 185, 0.14);
+  /* background-color: #d51c1c34; */
+  padding: 20px 30px;
+  max-width: 550px;
+}
+
+legend {
+  font-size: 3rem;
+}
+
+section {
+  margin: 20px 0;
+}
+
+h1 {
+  margin-top: 5px;
+}
+
+/* Wir haben zwei Möglichkeiten, das Input Element zu selektieren */
+/* V1 */
+input {
+  padding: 5px 20px;
+  border: none;
+  border-radius: 10px;
+  margin: 5px 10px;
+}
+
+/* V2 über die IDs oder classes .text */
+#text,
+#number,
+#telefon,
+#email,
+#password {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* V3 über type, die Schreibweise => eckige Klammer dann type als Keyword und dann ja nach dem was für ein type z.B. range, password, email...... */
+input[type="range"] {
+  cursor: pointer;
+  margin-top: 30px;
+  width: 400px;
+}
+
+input[type="button"] {
+  border: 2px solid red;
+  border: none;
+  background: darkgreen;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+textarea {
+  background: url(../img/favorite-dewey-quote-v0-te1pyojrez4a1.webp) center/contain no-repeat;
+  /* ! Entweder alles direkt in eine Zeile, da muss man nur mit dem css befehl "background arbeiten, oder man kann die drei eigenschaften nacheinander schreiben. Ersteres spart Zeilen */
+  /*  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat; */
+}
+
+input[type="submit"] {
+  border: none;
+  padding: 1rem 3rem;
+  background-color: deeppink;
+  color: white;
+}

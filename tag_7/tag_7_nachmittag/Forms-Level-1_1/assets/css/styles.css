@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  margin: 5vh 10vw;
+  justify-content: center;
+  align-items: center;
+}
+
+fieldset {
+  border: none;
+  padding: 20px 30px;
+  max-width: 500px;
+}
+
+#email,
+#thema,
+#textarea {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.submit_section input,
+.email_section input,
+.thema_section select,
+.text_section textarea {
+  width: 400px;
+}
+
+.name_section label,
+.email_section label,
+.thema_section label,
+.text_section label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.required {
+  color: red;
+}
+
+.submit_section input {
+  padding: 10px 50px;
+  background-color: cornflowerblue;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+.submit_section input:hover {
+  background-color: darkblue;
+}
+
+.name_inputs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.name_inputs input {
+  width: 195px;
+  padding: 5px 5px;
+}
+
+.email_section input,
+.thema_section select {
+  padding: 5px 5px;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Register form</legend>
+        <section class="name-section">
+          <label for="name">Name</label>
+          <input type="text" name="" id="name" placeholder="Name" />
+        </section>
+        <section class="surname-section">
+          <label for="surname">Surname</label>
+          <input type="text" name="" id="surname" placeholder="Surname" />
+        </section>
+        <section class="email-section">
+          <label for="email">Email</label>
+          <input type="email" name="" id="email" placeholder="Email" />
+        </section>
+        <section class="gender-section">
+          <label>Gender</label>
+          <div>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" />
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" />
+            
+          </div>
+        </section>
+
+        <section class="file-section">
+            <label for="file">Picture</label>
+            <input type="file" name="" id="file" />
+          </div>
+        </section>
+        <section class="country-section">
+            <label for="countries">Country</label>
+          <div>
+            <select name="countries" id="countries">
+              <option value="ger">Germany</option>
+              <option value="fra">France</option>
+              <option value="usa">USA</option>
+            </select>
+          </div>
+        </section>
+        <section class="language-section">
+            <label for="language">Preferred languages</label>
+          <div>
+            <select name="language" id="language" multiple size="3px">
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+              <option value="js">JS</option>
+              <option value="react">React</option>
+            </select>
+            <label>(To choose more than one use cmd key)</label>
+          </div>
+        </section>
+        <section class="activity-section">
+            <label>Field of activity</label>
+          <div>
+            <input type="checkbox" name="" id="it" value="it" />
+            <label for="it">IT</label>
+            <input type="checkbox" name="" id="design" value="design" />
+            <label for="design">Design</label>
+            <input type="checkbox" name="" id="other" value="other" />
+            <label for="other">Other</label>
+          </div>
+        </section>
+        <section class="button-section">
+          <div>
+            <button id="send">Send</button>
+            <button id="cancel">Cancel</button>
+          </div>
+        </section>
+      </fieldset>
+    </form>
+  </body>
+</html>

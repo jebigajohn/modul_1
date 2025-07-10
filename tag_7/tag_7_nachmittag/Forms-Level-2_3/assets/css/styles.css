@@ -1,0 +1,17 @@
+body {
+  margin: 0 auto;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+section label {
+  width: 140px;
+}
+
+.activity-section {
+  margin: 0 auto;
+}

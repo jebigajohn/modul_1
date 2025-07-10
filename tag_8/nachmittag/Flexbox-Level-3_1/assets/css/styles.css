@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/Raleway/Raleway-VariableFont_wght.ttf);
+}
+
+:root {
+  --font-family: "Raleway";
+  --header-height: 76px;
+  --logo-color: #666;
+  --logo-hover-color: #333;
+  --menu-color: #333;
+  --menu-hover: #337ab7;
+}
+header {
+  font-family: var(--font-family);
+  height: var(--header-height);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 200px;
+}
+
+.logo {
+  text-decoration: none;
+  color: var(--logo-color);
+  font-size: x-large;
+}
+.logo:hover {
+  color: var(--logo-hover-color);
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  gap: 40px;
+}
+nav li {
+  list-style-type: none;
+  font-size: smaller;
+}
+
+nav a {
+  color: var(--menu-color);
+  text-decoration: none;
+}
+nav a:hover {
+  color: var(--menu-hover);
+}
+
+main {
+  display: flex;
+  background: url(../img/60cb548018896c05e276c29ad396a1229ca3b219.png);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+  font-family: "Raleway";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flex-item__text {
+  display: flex;
+  align-items: center;
+  width: 1028.984375px;
+  flex-direction: column;
+  height: 150px;
+  color: white;
+  gap: 40px;
+}
+.flex-item__text a {
+  font-size: 14px;
+  font-weight: 400;
+}
+.flex-item__text h1 {
+  font-size: 60px;
+  font-weight: 400;
+}
+.flex-item__button button {
+  padding: 15px 61.19px;
+}
+
+#download {
+  color: white;
+  background-color: rgba(255, 0, 0, 0);
+  border: solid 2px white;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+#download:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border: solid 2px white;
+  transition: background-color 1s ease, color 1s ease;
+}
+#read {
+  color: white;
+  background-color: #745cf9;
+  border: solid 2px #745cf9;
+  text-transform: uppercase;
+}
+#read:hover {
+  background-color: rgb(102, 77, 247);
+  border: solid 2px rgb(102, 77, 247);
+  transition: background-color 1s ease, color 1s ease;
+}

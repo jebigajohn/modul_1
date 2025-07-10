@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <section class="name_section">
+          <label for="Vorname" for="Nachname">Name <span class="required">*</span></label>
+          <div class="name_inputs">
+            <input type="text" id="Vorname" placeholder="Vorname" required />
+            <input type="text" id="Nachname" placeholder="Nachname" required />
+          </div>
+        </section>
+        <section class="email_section">
+          <label for="Email">Email <span class="required">*</span></label>
+          <input type="email" name="" id="email" required />
+        </section>
+        <section class="thema_section">
+          <label for="thema">Thema</label>
+          <select name="themen" id="thema">
+            <option value="ad">Advertise</option>
+          </select>
+        </section>
+        <section class="text_section">
+          <div>
+            <label for="textarea">Nachricht <span class="required">*</span></label>
+            <textarea name="" id="textarea" cols="30" rows="10" required></textarea>
+          </div>
+          <div class="submit_section">
+            <input type="submit" value="Submit" />
+          </div>
+        </section>
+      </fieldset>
+    </form>
+  </body>
+</html>
