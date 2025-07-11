@@ -1,0 +1,114 @@
+/* # General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* -------------- */
+
+/* # Header */
+
+header nav {
+  display: none;
+}
+
+.burger-wrapper {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.burger {
+  background-color: rgb(255, 0, 0);
+  height: 5px;
+  width: 30px;
+  margin: 2px;
+  border-radius: 5px;
+}
+
+/* # HERO SECTION */
+
+.hero {
+  /* ! Variante 1 */
+  /* * Reihenfolge: background-position, background-size background-attachment */
+  background: url("https://images.unsplash.com/photo-1523688471150-efdd09f0f312?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D%22alt=%22Hotel")
+    center/cover fixed;
+  height: 100vh;
+
+  /* ! Variante 2 */
+  /* background-repeat: no-repeat;
+  background-position: center;
+  
+  background-size: cover;
+  /* background-attachment: fixed; Wird verwendert um den background beim scrollen bestehen zu lassen */
+  /* background-attachment: fixed; */
+}
+
+.hero div {
+  padding: 0 10vw;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: white;
+  padding-bottom: 5vh;
+  padding-top: 20vh;
+}
+
+.hero p {
+  color: white;
+}
+
+/* # INFO SECTION */
+
+.info div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.info div p {
+  text-align: center;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+/* # ------- MEDIA QUERIES ---------- */
+
+/* + Smartphone -> Desktop = bis xxx px */
+
+/* ? Smartphone bis 576px */
+/* ? Tablet bis 768px */
+/* ? Desktop bis 992px */
+
+/* + Desktop -> Smartphone = ab xxxx px */
+
+/* ? Smartphone ab 768px */
+/* ? ab diesem Wert kommen die Tablet Styles zum Einsatz */
+
+/* ? Smartphone ab 992px */
+/* ? ab diesem Wert kommen die Dekstop Styles zum Einsatz */
+
+/* ! WIE IST DIE SCHREIBWEISE BZW DER SYNTAX ? */
+
+/* @media screen {
+  Styles für alle Geräte mit Bildschirm
+} */
+
+/* @media only screen{
+  Styles für alle Geräte mit Bildschirm, aber ohne ältere Browser
+}  */
+
+/* @ Das Schlüsselwort "only" wird in CSS verwendet, um sicherzustellen, dass die Media Query nur vom Browser interpretiert wird, die Media Queries verstehen */
+
+/* ! Ohne only könnten die alten Browser die gesamte Regel ignorieren */

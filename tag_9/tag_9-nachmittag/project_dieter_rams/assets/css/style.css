@@ -1,0 +1,192 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/Raleway/Raleway-VariableFont_wght.ttf);
+}
+
+body {
+  font-family: "Raleway";
+}
+
+main {
+  display: flex;
+}
+.hero {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+.hero .artist_section {
+  display: flex;
+  flex-direction: row;
+  padding-left: 50px;
+}
+
+.hero .artist_section h1 {
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 40px 0px;
+}
+
+.hero .text_section {
+  gap: 50px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding-left: 50px;
+}
+
+.hero2 {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  background-color: #f3f3f3;
+}
+
+.hero2 article {
+  width: 100%;
+}
+
+.hero2 .number_section {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  padding: 40px 50px;
+  background-color: #f3f3f3;
+}
+.hero2 .number_section h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 28px;
+}
+.hero2 .number_section h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 14px;
+  color: #848484;
+}
+
+.hero2 .img {
+  display: flex;
+  background: url("../img/104_2_dieter_rams_the_jf_chen_collection_july_2018_artur_braun_and_fritz_eichler_sk_25_radio__wright_auction.jpg")
+    center/cover;
+  height: 100vh;
+}
+
+.hero .text_section h1 {
+  font-size: 40px;
+}
+.hero .text_section p {
+  font-size: 16px;
+  max-width: 400px;
+  color: #848484;
+}
+
+.footer_section {
+  display: flex;
+}
+
+footer .footer_section_left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f3f3f3;
+  width: 50%;
+}
+footer .footer_section_right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f3f3f3;
+  width: 50%;
+}
+
+footer .social_icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding-left: 20px;
+}
+footer .songtitle_section {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding-right: 20px;
+}
+
+.songtitle_section h1 {
+  font-size: 24px;
+}
+.songtitle_section h2 {
+  font-size: 12px;
+  color: #848484;
+}
+
+.social_icons img:nth-of-type(1) {
+  width: 25px;
+  height: 30px;
+}
+.social_icons img:nth-of-type(2) {
+  width: 15px;
+  height: 15px;
+}
+
+.button_left {
+  content: " ͢ ";
+  padding: 50px 50px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: none;
+  font-size: 18px;
+}
+.button_right {
+  content: " ͢ ";
+  padding: 50px 50px;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 992px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero {
+    width: 100%;
+  }
+  .hero2 {
+    width: 100%;
+  }
+
+  .hero2 img {
+    width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero {
+    width: 100%;
+  }
+  .hero2 {
+    width: 100%;
+  }
+
+  .hero2 img {
+    width: 100vw;
+  }
+}
