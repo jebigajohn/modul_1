@@ -1,0 +1,380 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url(../fonts/Urbanist/Urbanist-VariableFont_wght.ttf);
+}
+
+body {
+  font-family: "Urbanist";
+}
+
+nav .menu {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  height: auto;
+  padding: 16px;
+}
+
+nav .campsideheader {
+  border: 1px solid black;
+  border-radius: 45px;
+  padding: 8px;
+  width: 100%;
+}
+
+.burger-wrapper {
+  position: absolute;
+  top: 35px;
+  right: 40px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.burger {
+  background-color: rgb(0, 0, 0);
+  height: 4px;
+  width: 30px;
+  margin: 3px 0;
+  border-radius: 2px;
+}
+
+.backtonatureheader {
+  padding: 0 20px;
+}
+
+.div-header img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* .div-header_text_box {
+  position: absolute;
+  top: clamp(80px, 30vh, 270px);
+  left: clamp(20px, 10vw, 100px);
+}
+
+.div-header_text {
+  font-family: "Urbanist";
+  font-size: 54px;
+  font-weight: 900;
+  line-height: 80%;
+} */
+
+.div-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.div-form button {
+  width: 295px;
+  height: 56px;
+  border-radius: 30px;
+  font-family: "Urbanist";
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+}
+.div-form button:nth-of-type(1) {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  box-shadow: -4px -4px 0px 0px #00000040 inset;
+}
+.div-form button:nth-of-type(2) {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  box-shadow: -4px -4px 0px 0px #00000040 inset;
+}
+.div-form button:nth-of-type(3) {
+  background-color: #a9cba6;
+  color: rgb(255, 255, 255);
+  border: 1px solid black;
+  box-shadow: -4px -4px 0px 0px #00000040 inset;
+}
+
+.div_cards {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+}
+
+.div_cards-heading {
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.div_cards-heading h1 {
+  font-size: 40px;
+  font-weight: 900;
+}
+.div_cards-heading p {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.24px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 19.22px;
+}
+.cards h1 {
+  font-weight: 700;
+  font-style: bold;
+  line-height: 26.78px;
+  letter-spacing: 0.24px;
+}
+.cards p {
+  display: inline-block;
+  font-weight: 300;
+  font-style: light;
+  line-height: 100%;
+  letter-spacing: 0.37px;
+}
+
+.illustration_card-1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 232.62770080566406px;
+  height: 340px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  color: black;
+  border-radius: 15.68px;
+  box-shadow: -4px -4px 0px 0px #00000040 inset;
+}
+.illustration_card-2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 232.62770080566406px;
+  height: 340px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  color: black;
+  border-radius: 15.68px;
+  box-shadow: -4px -4px 0px 0px #00000040 inset;
+}
+.illustration_card-3 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 232.62770080566406px;
+  height: 340px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  color: black;
+  border-radius: 15.68px;
+  box-shadow: -4px -4px 0px 0px #00000040 inset;
+}
+.illustration_card-4 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 232.62770080566406px;
+  height: 340px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  color: black;
+  border-radius: 15.68px;
+  box-shadow: -4px -4px 0px 0px #00000040 inset;
+}
+.illustration_card-5 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 232.62770080566406px;
+  height: 340px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  color: black;
+  border-radius: 15.68px;
+  box-shadow: -4px -4px 0px 0px #00000040 inset;
+}
+
+.div_cards-button button {
+  width: 295px;
+  height: 56px;
+  border-radius: 30px;
+  font-family: "Urbanist";
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+}
+
+.div_cards-button button {
+  background-color: #a9cba6;
+  color: rgb(255, 255, 255);
+  border: 1px solid black;
+  box-shadow: -4px -4px 0px 0px #00000040 inset;
+}
+
+.section_infocards {
+  background-image: url(../img/greenbulb.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 64px;
+}
+
+.div_carcards {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+}
+
+.div_carcards-heading {
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.div_carcards-heading h1 {
+  font-size: 40px;
+  font-weight: 900;
+}
+.div_carcards-heading p {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.24px;
+}
+
+.carcards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 19.22px;
+}
+
+.section_carcards {
+  background-image: url(../img/bluebulb.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 64px;
+}
+
+.illustration_carcard-1 {
+  width: 353px;
+  height: 376.1105651855469px;
+  border: 1px solid black;
+  color: black;
+  border-radius: 50px;
+  box-shadow: -4px -4px 0px 0px #00000040 inset;
+}
+
+.illustration_carcard-1-img img {
+  border-bottom: 1px solid black;
+  width: 352px;
+}
+
+.carcardwrapper {
+  padding: 14px 34px;
+  background-color: #f0cea0;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.carcardwrapper ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 7.12px;
+}
+.illustration_carcard-1-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.illustration_carcard-1-header h1 {
+  font-weight: 900;
+  font-size: 40px;
+}
+
+.illustration_carcard-1-header .beforeh2 {
+  font-weight: 700;
+  font-size: 20px;
+}
+.illustration_carcard-1-header h2 {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.illustration_carcard-1-list li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.div_carcards-button .div_carcards-button-1 {
+  width: 295px;
+  height: 56px;
+  border-radius: 30px;
+  font-family: "Urbanist";
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+}
+
+.div_carcards-button-1 {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: 1px solid black;
+  box-shadow: -4px -4px 0px 0px #00000040 inset;
+}
+.div_carcards-button-2 {
+  background-color: #a9cba6;
+  color: rgb(255, 255, 255);
+  border: 1px solid black;
+  box-shadow: -4px -4px 0px 0px #00000040 inset;
+}

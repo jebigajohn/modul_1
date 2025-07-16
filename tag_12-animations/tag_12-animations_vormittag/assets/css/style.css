@@ -1,0 +1,212 @@
+html {
+  font-family: sans-serif;
+}
+
+h2 {
+  color: rgb(255, 0, 85);
+}
+
+/* # ----- transform ------ */
+
+.example {
+  width: 50px;
+  height: 50px;
+  background-color: teal;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+
+  transform: scale(1.2);
+}
+
+/* ? translate */
+/* x-Achse und y-Achse */
+/* transform: translate (150px, -100px) */
+/* transform: translateX(10rem); */
+/* transform: translateY(200%); */
+
+/* ? rotate */
+/* transform: rotate(-90deg);  */
+/* transform: rotateX(50deg); */
+/* transform: rotateY(50deg);  */
+
+/* ? scale */
+/* transform: scale(4); */
+/* transform: scaleX(2); */
+/* transform: scaleY(2); */
+
+/* Wenn ich mehrere Elemente transformen möchte, dann schreibe ich sie hintereinander weg: */
+/* transform: scale(2) rotate (20deg) translate(100px) */
+
+.example:hover {
+  transform: scale(2);
+  cursor: pointer;
+}
+
+/* # transition */
+
+button {
+  background-color: deeppink;
+  border-radius: 8px;
+  border-style: none;
+  color: wheat;
+  padding: 10px 20px;
+  cursor: pointer;
+
+  /* ! Transition muss immer in das "Hauptelement" (nicht ins hover etc) */
+
+  transition: background-color 0.5s ease-in-out, transform 1s 2s cubic-bezier(0, 0.28, 1, 0.17);
+
+  /* 1. Wert: Was bekommt die Transition? */
+  /* 2. Wert: Dauer der Transition */
+  /* 3. Wert: Wie soll die Transition ablaufen? */
+  /* transition: all 1s ease-in */
+}
+
+button:hover {
+  background-color: rgb(236, 114, 0);
+  transform: scale(1.2);
+}
+
+input {
+  transition: background-color 0.5s ease-in-out;
+}
+
+input:focus {
+  background-color: aquamarine;
+}
+
+/* # ----- IMG ----- */
+
+.scale {
+  border: 2px solid deeppink;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.scale img {
+  transition: transform 0.5s linear;
+}
+
+.scale:hover img {
+  transform: scale(1.2);
+}
+
+/* # ---- Animation ---- */
+
+.jump {
+  background-color: deeppink;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 4rem;
+
+  animation: jump-pizza 0.5s linear infinite alternate;
+}
+
+@keyframes jump-pizza {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(25px);
+  }
+}
+
+.animate_section {
+  background-color: gainsboro;
+  height: 300px;
+  width: 300px;
+  margin-bottom: 4rem;
+}
+
+.animate_section div {
+  width: 50%;
+  background-color: purple;
+  height: 50%;
+
+  /* ? mit animation rufe ich den Namen der Animation keyframes auf */
+  /* ?sectionAnimate ist der Name der Animation */
+  /* ? 4s => ist wie lange die Animation dauern soll */
+  /* ? linear => wie soll die animation laufen (timing) */
+  /* ? infinte => wie oft soll die animation durchgespielt werden ( hier kann man auch numbers eingeben) */
+  animation: sectionAnimate 4s 2s linear infinite normal;
+}
+
+.animate_section:hover div {
+  animation-play-state: paused;
+}
+
+@keyframes sectionAnimate {
+  0%,
+  100% {
+    background-color: green;
+  }
+
+  25% {
+    background-color: red;
+    transform: translateY(100%);
+    animation-timing-function: ease;
+  }
+
+  50% {
+    background-color: orangered;
+    transform: translate(100%, 100%);
+  }
+
+  75% {
+    background-color: blue;
+    transform: translateX(100%);
+  }
+
+  /* ? 100%  */
+  /* Wenn man unterschiedliche Start und Endpunkt animationen haben will */
+}
+
+/* # ---- LOADER ---- */
+
+.loader {
+  display: flex;
+  gap: 10px;
+}
+
+.loader div {
+  background-color: orangered;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-bottom: 4rem;
+}
+
+.loader div:nth-of-type(1) {
+  animation: loading 1.5s infinite linear;
+}
+.loader div:nth-of-type(2) {
+  animation: loading 1.5s 0.2s infinite linear;
+}
+.loader div:nth-of-type(3) {
+  animation: loading 1.5s 0.4s infinite linear;
+}
+.loader div:nth-of-type(4) {
+  animation: loading 1.5s 0.6s infinite linear;
+}
+
+@keyframes loading {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  33% {
+    transform: translateY(-10px);
+  }
+
+  66% {
+    transform: translateY(10px);
+  }
+}

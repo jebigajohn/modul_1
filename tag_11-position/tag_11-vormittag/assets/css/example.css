@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* # Übung 1 */
+
+h2 {
+  text-align: center;
+}
+.exercise-1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(3, 10vh);
+  gap: 10px;
+  padding: 20px 20px;
+}
+
+.exercise-1 div {
+  background-color: darkblue;
+  border: 2px solid lightblue;
+  border-radius: 5px;
+  color: white;
+}
+
+.one {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+
+.two {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.three {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  text-align: center;
+}
+
+.four {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+/* # Übung 2 */
+
+/* ? Variante 1 */
+/* === Position Relative + Absolut === */
+/* .flex_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item1 {
+  width: 50vw;
+  height: 50vh;
+  background-color: rgb(128, 128, 128);
+  color: white;
+  border-radius: 15px;
+}
+
+.exercise-2 {
+  position: relative;
+}
+
+.item2 {
+  position: absolute;
+  width: 50vw;
+  height: 50vh;
+  background-color: rgba(182, 5, 158, 0.446);
+  color: white;
+  border-radius: 15px;
+  left: 20px;
+  top: 25vh;
+} */
+
+/* === display grid === */
+/* ? Variante 2 */
+.exercise-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: repeat(3, 100px);
+}
+
+.item1 {
+  background-color: gray;
+  border-radius: 15px;
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+.item2 {
+  background-color: rgba(165, 0, 154, 0.428);
+  border-radius: 15px;
+  grid-column: 2/4;
+  grid-row: 2/4;
+}
+
+/* # Übung 3 */
+
+.exercise-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: Das lassen wir weg, weil die Kindelemente von uns die Höhe und Breite bekommen*/
+  gap: 10px;
+  padding: 10px;
+}
+
+.card {
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 36vh;
+  object-fit: cover;
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+.card img:hover {
+  transform: scale(1.1);
+}
+
+/* ****** NICE TO KNOW ****** */
+
+.box {
+  background-color: teal;
+  color: white;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 1.2rem;
+}
+
+/* ! minmax() */
+
+/* => die Werte in den runden Klammern geben eine minimale und maximale Höhe und Breite => 1. Wert min, 2. Wert max */
+
+.section__minmax {
+  display: grid;
+  grid-template-columns: minmax(200px, 1fr) 200px 200px;
+  /* Spalte A ist min 200px, aber kann wachsen */
+  gap: 10px;
+}
+
+/* ! auto-fill => fügt immer neue Spalten hinzu ( selbst wenn sie leer bleiben) */
+
+/* ! Es füllt die Zeilen mit so vielen Spalten wie möglich, basierend auf der verfügbaren Breite, wenn es nicht genug Inhalt gibt, bleiben leere Spalten im Grid */
+
+.autofill,
+.autofill-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+/* ? Warum "auto" bei grid-column */
+/* % "auto" bei grid-column oder grid-row bedeutet: "Fang da an, wo es platz gibt- also keine festen Werte */
+
+/* => das bedeutet => */
+
+/* Das Element .g beginnt automatisch an der nächsten freien Spalte (auto)
+spannt sich über zwei Zeilen hinweg */
+
+.autofill-2 .a {
+  background-color: aqua;
+  grid-column: auto / span 2;
+}
+.autofill-2 .k {
+  background-color: beige;
+  grid-column: auto / span 2;
+}
+.autofill-2 .g {
+  background-color: burlywood;
+  grid-column: auto / span 2;
+  grid-row: auto / span 2;
+}
+
+/* ! auto-fill VS auto-fit */
+
+.container {
+  display: grid;
+}
+
+/* ! auto-fill: behält die Struktur bei, auch wenn leere Spalten vorhanden sind, bzw es mehr Platz gibt */
+
+.fill {
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+/* ! auto-fit: Passt die Struktur an, so dass leere Spalten verschwinden und die Elemente den verfügbaren Platz füllen */
+
+.fit {
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.grid-element {
+  background-color: violet;
+  border: 1px solid cyan;
+  color: white;
+  padding: 20px;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Position</h1>
+      <section>
+        <h2>Was ist Position?</h2>
+        <p>
+          Mit den CSS-Eigenschaften <code>position</code> wird gesteuert, wo die Elemente auf einer Seite dargestellt
+          werden.
+        </p>
+      </section>
+      <section>
+        <h2>Wie funktioniert das?</h2>
+        <p>
+          <code>postion</code> legt fest, wie die Elemente in unserem Dokument positioniert werden. Die Eigenschaften
+          sind <code>top</code> <code>bottom</code> <code>left</code> und <code>right</code>
+        </p>
+        <p></p>
+      </section>
+      <article>
+        <h3><code>position: static</code></h3>
+        <p>Standartwert für jedes HTML Element, das Element befindet sich an einer Standartposition</p>
+        <div class="box-container flex">
+          <div class="box"></div>
+          <div class="box static flex">static</div>
+          <div class="box"></div>
+        </div>
+      </article>
+      <article>
+        <h3><code>position: relative</code></h3>
+        <p>
+          Das Element bleibt an seiner ursprünglichen Stelle, kann von dort aus aber mit top, left usw. verschoben
+          werden
+        </p>
+        <div class="box-container flex">
+          <div class="box"></div>
+          <div class="box relative flex">relative</div>
+          <div class="box"></div>
+        </div>
+      </article>
+
+      <article class="relative-wrapper">
+        <h3><code>position: absolute</code></h3>
+        <p>
+          Das Element orientiert sich am nächstgelegenen nicht-statischen Eltern Element, wenn es ein solches Element
+          nicht gib, orientiert es sich am HTML-Element <code>body</code>
+        </p>
+        <p>Best practice: Das Eltern-Element sollte die Eigenschaft => position: relative erhalten</p>
+        <div class="box-container flex">
+          <div class="box"></div>
+          <div class="box absolut flex">absolut</div>
+          <div class="box"></div>
+        </div>
+      </article>
+
+      <article>
+        <h3><code>position: fixed</code></h3>
+        <p>
+          Das Element orientiert sich am Browserfenster, es wird aus dem Dokumenten Fluss entfernt und bleibt beim
+          scrollen immer an seiner Position
+        </p>
+        <div class="box-container flex">
+          <div class="box"></div>
+          <div class="box fixed flex">fixed</div>
+          <div class="box"></div>
+        </div>
+      </article>
+
+      <article class="show-sticky">
+        <h3><code>position: sticky</code></h3>
+        <p>
+          Das Element scrollt mit, bis eine seiner Kanten die durch <code>top</code><code>bottom</code> <code>left</code
+          ><code>right</code> angegebenen Koordinate erreicht hat
+        </p>
+        <div class="box-container flex">
+          <div class="box"></div>
+          <div class="box sticky flex">sticky</div>
+          <div class="box"></div>
+        </div>
+      </article>
+
+      <div class="ich-schaffe-platz"></div>
+
+      <a class="btn" href="./assets/html/example.html">Übungen für Display Grid</a>
+    </main>
+  </body>
+</html>

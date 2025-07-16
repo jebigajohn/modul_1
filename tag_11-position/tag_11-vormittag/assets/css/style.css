@@ -1,0 +1,117 @@
+/* === General Styling === */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  /* text-align: center; */
+  /* margin: 5% auto;
+  width: 80vw; */
+
+  padding: 5% 15%;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h1 {
+  text-align: center;
+}
+
+code {
+  color: blue;
+  font-weight: bold;
+}
+
+/* === boxes und Container === */
+
+.box-container {
+  gap: 10px;
+  padding: 20px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  border: 2px solid grey;
+  width: 100px;
+  height: 100px;
+}
+
+/* === static === */
+.static {
+  background-color: rosybrown;
+}
+
+/* === relative === */
+
+.relative {
+  background-color: rgb(118, 250, 162);
+  position: relative;
+  top: 40px;
+  left: 40px;
+}
+
+/* === absolute === */
+
+.relative-wrapper {
+  position: relative;
+}
+
+.absolut {
+  background-color: rgb(187, 60, 187);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* === fixed === */
+
+.fixed {
+  background-color: rgb(239, 123, 123);
+  position: fixed;
+  right: 10px;
+  bottom: 120px;
+}
+
+/* === PLATZHALTER === */
+
+.ich-schaffe-platz {
+  height: 100vh;
+}
+
+/* === sticky === */
+
+.sticky {
+  background-color: rgb(200, 240, 70);
+  position: sticky;
+  top: 0;
+}
+
+article:last-of-type .box-container {
+  background-color: rgba(128, 128, 128, 0.189);
+  align-items: flex-start;
+  height: 50vh;
+  margin-bottom: 4rem;
+}
+
+.btn {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  color: rgb(255, 4, 234);
+  text-decoration: none;
+  background-color: black;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 1.5rem;
+}
