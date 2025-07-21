@@ -51,4 +51,17 @@
     flex-direction: row;
     gap: 55px;
   }
+
+  .div-header_text_box {
+    position: absolute;
+    top: 440px;
+    left: 150px;
+  }
+
+  .div-header_text {
+    font-family: "Urbanist";
+    font-size: 100x;
+    font-weight: 900;
+    line-height: 80%;
+  }
 }
