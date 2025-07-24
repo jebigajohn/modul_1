@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grundlagen</title>
+
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      div {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        border: 1px solid black;
+        width: 200px;
+        height: 150px;
+        border-radius: 10px;
+      }
+
+      input:nth-of-type(2) {
+        background-color: rgb(11, 248, 11);
+        width: 150px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <input type="text" name="" id="color" />
+      <p>Give me a Color!</p>
+      <input type="button" value="Senden" onclick="change()" />
+    </div>
+    <script src="./src/main.js"></script>
+  </body>
+</html>
