@@ -23,6 +23,49 @@ const breakingBad = new Series(
   [ep1, ep2]
 )
 
+const wentworth = new Actor("Wentworth", "Miller", new Date("1972-06-02"), "Male")
+const dominic = new Actor("Dominic", "Purcell", new Date("1970-02-17"), "Male")
+const sarahWC = new Actor("Sarah Wayne", "Callies", new Date("1977-06-01"), "Female")
+
+const pbEp1 = new Episode(
+  "Pilot",
+  44,
+  "Michael versucht, seinen Bruder mit einem gewagten Plan aus dem Gefängnis zu holen.",
+  [wentworth, dominic, sarahWC]
+)
+const pbEp2 = new Episode("Allen", 43, "Der Plan nimmt Form an, doch die Zeit arbeitet gegen sie.", [
+  wentworth,
+  dominic,
+])
+
+const prisonBreak = new Series(
+  "Prison Break",
+  "Ein Ingenieur lässt sich absichtlich inhaftieren, um seinen Bruder aus dem Todestrakt zu befreien.",
+  2005,
+  2017,
+  [pbEp1, pbEp2]
+)
+
+const andrew = new Actor("Andrew", "Lincoln", new Date("1973-09-14"), "Male")
+const norman = new Actor("Norman", "Reedus", new Date("1969-01-06"), "Male")
+const steven = new Actor("Steven", "Yeun", new Date("1983-12-21"), "Male")
+
+const twdEp1 = new Episode(
+  "Days Gone Bye",
+  67,
+  "Rick erwacht in einer apokalyptischen Welt und sucht nach seiner Familie.",
+  [andrew, steven]
+)
+const twdEp2 = new Episode("Guts", 45, "Eine gefährliche Flucht durch zombiverseuchte Straßen.", [andrew, norman])
+
+const theWalkingDead = new Series(
+  "The Walking Dead",
+  "Überleben in einer Welt voller Untoter – und der Menschlichkeit dazwischen.",
+  2010,
+  2022,
+  [twdEp1, twdEp2]
+)
+
 function printSeriesInfo(series: Series) {
   console.log(`Title: ${series._title}`)
   console.log(`Description: ${series._description}`)
@@ -49,3 +92,7 @@ function printSeriesInfo(series: Series) {
 }
 
 printSeriesInfo(breakingBad)
+console.log("\n----------------------\n")
+printSeriesInfo(prisonBreak)
+console.log("\n----------------------\n")
+printSeriesInfo(theWalkingDead)
